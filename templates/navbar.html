@@ -1,0 +1,33 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="/">
+            <h1><span>SYNTAX</span>PYTHON<span></span></h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <a href="/sidebar">
+          <div class="hamburger">
+            <div class="bar">
+          </div>
+        </div>
+          </a>
+          <ul>
+            <li><a href="/" data-after="Home">Home</a></li>
+            <li><a href="/topics" data-after="Contact">Topics</a></li>
+            <li><a href="/projects" data-after="Projects">Basic Projects</a></li>
+            <li><a href="/packages" data-after="Service">Packages and Modules</a></li>
+            <li><a href="/facts" data-after="About">Fun Facts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->

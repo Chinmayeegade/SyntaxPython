@@ -1,0 +1,92 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/24.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">CLASSES<span></span></h1>
+          <p>Python is an object-oriented language, and hence possesses the ability to admit numerous, featured details about the output. A ‘class’, in Python inherits all these details and saves them. A class is like a blueprint to the formation of the output.</p>
+        <p>A class is defined using the class keyword, a variable to name the class, a pair of parentheses (), and a colon : .</p>
+        <p>The parentheses may or may not admit values based on requirement.</p>
+        <p>Everything inputted within a class must be appropriately indented.</p>
+        <p>Class functions are very significant when Programming Graphical User Interfaces and while using imported packages modules.</p>
+        <p>Class functions are very significant when Programming Graphical User Interfaces and while using imported packages modules.</p>
+        <p>The class has been given an attribute (Characteristic of class) by the variable type.</p>
+        <p>     The class has been given an attribute (Characteristic of class) by the variable type.</p>
+        <p>     The attributes of the type variable are defined inside the __init__ method of the class. It initializes the program inputted within the class and runs as soon as the object is defined. It inputs the features which are to be further used in the program, within the parentheses.</p>
+        <p>The self function is a predominant feature of classes, and it acts as the instance in for the program and binds the attribute to the argument.</p>
+        <p>After escaping the class, to call the class type the class name along with a pair of parentheses and the values of the features stated in the class, inside these parentheses.</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>class Madlibs_App():
+
+    type = "Game"
+
+    def  __init__(self, name, place, animal, food):
+
+        self.name = name
+
+        self.place = place
+
+        self.animal = animal
+
+        self.food = food
+
+        print("Hi",self.name,"!!\n
+        Imagine watching a(n)",self.animal,"eating",self.food,"at",self.place,
+        "!\n Wouldn't that be hilarious!? :)")
+
+
+
+Madlibs_App(input("Enter your name: "),
+input("Enter your favourite place: "),
+input("Enter your favourite animal: "),
+input("Enter your favourite food: "))</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>Enter your name: John
+
+Enter your favourite place: Mcdonalds
+
+Enter your favourite animal: Giraffe
+
+Enter your favourite food: Spaghetti
+
+Hi John !!
+
+ Imagine watching a(n) Giraffe eating Spaghetti at Mcdonalds !
+
+                  Wouldn't that be hilarious!? :)</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

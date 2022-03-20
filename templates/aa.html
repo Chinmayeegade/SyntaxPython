@@ -1,0 +1,47 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+ <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+    <div>
+        <h1><br></h1>
+        <center><h1>MULTICOLOR HEXAGONAL SPIRAL IN TURTLE<span></span></h1></center>
+        <center><table>
+              <tr><th><pre>import turtle
+col = ("red","orange","yellow","green","blue","indigo","violet")
+t = turtle.Turtle()
+screen = turtle.Screen()
+screen.bgcolor("white")
+t.speed(100)
+t.shape("square")
+
+
+for i in range(300):
+    t.color(col[i%7])
+    t.forward(i*1.5)
+    t.left(70)
+    t.width(5)</pre></th></tr>
+        </table></center>
+        <br>
+        <img src="{% static 'images/turtle.png' %}">
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+{% include 'footer.html' %}

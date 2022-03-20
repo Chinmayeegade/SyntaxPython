@@ -1,0 +1,62 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+ <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+    <div>
+        <h1><br></h1>
+        <center><h1>BOUNCING IMAGE IN PYGAME<span></span></h1></center>
+        <center><table>
+              <tr><th><pre>import sys
+import pygame
+from pygame.locals import *
+
+pygame.init()
+surface = pygame.display.set_mode((640,480))
+
+image = pygame.image.load("download.jpg")
+#download.jpg in the image stored in device
+#download.jpg in the image stored in device
+image_rect = image.get_rect()
+time = pygame.time.Clock()
+
+width = surface.get_width()
+height = surface.get_height()
+
+speed = [4,4]
+while True:
+    for ev in pygame.event.get():
+        if ev.type == QUIT:
+            pygame.quit()
+    time.tick(60)
+    surface.fill((0,0,0))
+    image_rect = image_rect.move(speed)
+    if image_rect.left < 0 or image_rect.right > width:
+        speed[0] = -speed[0]
+    if image_rect.top<0 or image_rect.bottom > height:
+        speed[1] = -speed[1]
+    surface.blit(image,image_rect)
+    pygame.display.flip()</pre></th></tr>
+        </table></center>
+        <br>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+{% include 'footer.html' %}

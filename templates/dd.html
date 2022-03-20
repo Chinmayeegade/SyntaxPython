@@ -1,0 +1,110 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+ <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+    <div>
+        <h1><br></h1>
+        <center><h1>SIMPLE CALCULATOR GUI IN PYTHON<span></span></h1></center>
+        <center><table>
+              <tr><th><pre>import tkinter
+
+from tkinter import Label
+
+from tkinter import Entry
+
+from tkinter import Button
+
+
+
+def process():
+
+    number1 = Entry.get(e_num1)
+
+    number2 = Entry.get(e_num2)
+
+    operation = Entry.get(e_operator)
+
+    number1 = int(number1)
+
+    number2 = int(number2)
+
+    if operation == "+":
+
+        ans = number1 +number2
+
+    if operation == "-":
+
+        ans = number1 - number2
+
+    if operation == "*":
+
+        ans = number1 * number2
+
+    if operation == "/":
+
+        ans = number1 / number2
+
+    Entry.insert(e_answer,0,ans)
+
+    print(ans)
+
+
+
+main = tkinter.Tk()
+
+title = Label(main, text = "Calculator",).grid(row = 0, column = 10)
+
+num1 = Label(main, text = "1st Number",).grid(row = 1, column = 0)
+
+num2 = Label(main, text = "2nd Number",).grid(row = 2, column = 0)
+
+operator = Label(main, text = "Operation(+/-/*//)",).grid(row = 3, column = 0)
+
+answer = Label(main, text = "Answer",).grid(row = 5, column = 0)
+
+e_num1 = Entry(main)
+
+e_num1.grid(row = 1, column = 10)
+
+e_num2 = Entry(main)
+
+e_num2.grid(row = 2, column = 10)
+
+e_operator = Entry(main)
+
+e_operator.grid(row = 3, column = 10)
+
+e_answer = Entry(main)
+
+e_answer.grid(row = 5, column = 10)
+
+submit = Button(main, text = "Submit",command = process).grid(row = 4, column = 10)
+
+
+
+main.mainloop()</pre></th></tr>
+        </table></center>
+        <br>
+        <img src="{% static 'images/calculator.png' %}">
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+{% include 'footer.html' %}

@@ -1,0 +1,63 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/4.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">VARibles and data types<span></span></h1>
+          <p>Python has 5 fundamental forms in which data can be stored. These are known as data types. They are: Strings, Numbers, Lists, Tuples and Dictionaries.</p>
+        <p>Variables are ‘objects’ used to identify and store a specific data type.</p>
+        <p>Variables play an utmost important role in programing.</p>
+        <p>A single variable can store and reproduce an infinite amount of data as long as the data type is constant.</p>
+        <p>Data is stored in a variable by defining the variable, followed by an equal sign = , followed by the data.</p>
+        <p>A variable, once defined can be inputted innumerable times in the respective program instead of tediously inputting the whole data each and every time.</p>
+        <p>A variable can also be changed/modified mid-program using the equal sign = .</p>
+        <p>When any variable is to be printed (using the print function), the value(s) stored within that variable shall be outputted.</p>
+        <p>Rules for assigning variables:</p>
+        <p>1) Variables are case-sensitive. (That is, num1 and Num1 are considered as two different variables)</p>
+        <p>2) Variables must begin with an underscore _ or a letter (upper or lower case).</p>
+        <p>3) A variable may not contain any space tabs.</p>
+        <p>4) Numbers, letters (upper and lower cases) and underscores are allowed in variables, however the variable should not begin with a number.</p>
+        <p>5) Special characters are forbidden within a variable.</p>
+        <p>6) While stating or reproducing a variable within a program, it should NOT be enclosed within inverted commas.</p>
+        <p>INPUT:</p>
+       <table>
+              <tr><th>My_variable5 = "Great minds think alike."</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>print(My_variable5)</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>Great minds think alike.</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

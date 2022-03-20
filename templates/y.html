@@ -1,0 +1,104 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/25.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">comments<span></span></h1>
+          <p>Comments in python are instructions/manuals entered amidst the program for the programmer to comprehend the code.</p>
+          <p>Comments are never printed/generated in the output.</p>
+          <p>To write a comment, print a hashtag # and then type the comment.</p>
+          <p>Alternatively, comments can also be added by enclosing the text within three pairs of double inverted commas.</p>
+          <p>INPUT:</p>
+        <table>
+              <tr><th><pre>Num1 = 54
+
+Num2 = 66
+
+# Print the summation of Num1 and Num2
+
+print(Num1 + Num2)</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>120</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <p>Comparison operators are used to compare/equate numerical values/variables.</p>
+        <p>Following are the comparison operators and their meanings:</p>
+              <table style="width:100%">
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Equal to</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Not Equal to</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Greater than</td>
+        </tr>
+      <tr>
+        <td><</td>
+        <td>Less than</td>
+        </tr>
+                          <tr>
+            <td>>=</td>
+            <td>Greater than/Equal to</td>
+        </tr>
+                          <tr>
+            <td><=</td>
+            <td>Less than/Equal to</td>
+        </tr>
+    </table>
+          <br>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>a = 9 * 7
+
+b = 21 * 3
+
+print(a == b)</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>True</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

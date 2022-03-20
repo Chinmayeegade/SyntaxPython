@@ -1,0 +1,80 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+ <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+    <div>
+        <h1><br></h1>
+        <center><h1>RANDOM DICE ROLL IN PYTHON<span></span></h1></center>
+        <center><table>
+              <tr><th><pre>import random
+from random import choice
+x = int(input("How many dice do you want to roll? "))
+n = int(input("How many times do you want to roll the die/dice? "))
+option = [1,2,3,4,5,6]
+series = []
+for i in range(1,n+1,1):
+    for c in range(0,x,1):
+     a = random.choice(option)
+     series.append(a)
+    print("Roll",i,"=",sum(series))
+    input("Press 'Enter' key")
+    series.clear()</pre></th></tr>
+        </table></center>
+        <br>
+        <center><p>OUTPUT:</p>
+        <table>
+            <tr><th><pre>How many dice do you want to roll? 3
+
+How many times do you want to roll the die/dice? 6
+
+Roll 1 = 7
+
+
+
+Roll 2 = 12
+
+
+
+Roll 3 = 12
+
+
+
+Roll 4 = 8
+
+
+
+Roll 5 = 14
+
+
+
+Roll 6 = 13
+
+
+
+
+
+Process finished with exit code 0</pre></th></tr>
+        </table>
+        </center>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+{% include 'footer.html' %}

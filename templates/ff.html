@@ -1,0 +1,86 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+ <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+    <div>
+        <h1><br></h1>
+        <center><h1>PIE CHART USING MATPLOTLIB<span></span></h1></center>
+        <center><table>
+              <tr><th><pre>import matplotlib
+import matplotlib.pyplot as pie
+divisions = int(input("Enter the number of data categories: "))
+total = int(input("Enter the total value of the data: "))
+data = []
+values = []
+for n in range(1,divisions+1,1):
+    print("Enter the title of data category number",n,": ")
+    category = input()
+    data.append(category)
+    print("Enter the value of",data[n-1],": ")
+    Input = int(input())
+    percent = (100*Input)/total
+    values.append(percent)
+pie.pie(x=values, labels=data)
+pie.show()</pre></th></tr>
+        </table></center>
+        <br>
+        <center>
+            <p>OUTPUT:</p>
+            <table>
+                <tr>
+                    <th>
+                        <pre>Enter the number of data categories: 3
+
+Enter the total value of the data: 500
+
+Enter the title of data category number 1 :
+
+Fats
+
+Enter the value of Fats :
+
+150
+
+Enter the title of data category number 2 :
+
+Carbohydrates
+
+Enter the value of Carbohydrates :
+
+250
+
+Enter the title of data category number 3 :
+
+Proteins
+
+Enter the value of Proteins :
+
+100</pre>
+                    </th>
+                </tr>
+            </table>
+            <br>
+        </center>
+        <img src="{% static 'images/pie.png' %}">
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+{% include 'footer.html' %}

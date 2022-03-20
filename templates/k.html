@@ -1,0 +1,214 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/11.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">NUMERIC OPERATIONS<span></span></h1>
+          <p>Python has a number of built-in as well as callable functions to perform various mathematical operations.</p>
+          <p>1) Addition</p>
+        <p>Two numbers can be added by simply using the plus sign + .</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(3+5)</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>8</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+
+                    <p> 2)  Subtraction:</p>
+        <p>Two numbers can be subtracted by simply using the minus sign - .</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(30-37)</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>-7</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+
+                              <p>3)  Multiplication:</p>
+        <p>Two numbers can be subtracted by simply using the asterisk * .</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(30*7)</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>210</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+
+                                    <p>4) Division</p>
+          <p> Two numbers can be divided by simply using a front slash  / and the answer will be obtained in a decimal form.</p>
+          <p> If two numbers with 2 front slashes // between them are inputted inside a print function, only a whole number quotient (rounded DOWN) of the division problem will be outputted.</p>
+          <p> If two numbers with a percentage sign % between them are inputted inside a print function, the remainder of the division problem will be outputted. (Modulus function)</p>
+               <p>INPUT:</p>
+        <table>
+            <tr><th><pre>print(10 / 2)
+
+print(17 // 4)
+
+print(80 % 6)</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>5
+
+
+
+4
+
+
+
+2</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+                    <p>5) Power</p>
+        <p>A number can be raised to the power of a second number using two methods:</p>
+          <p>1) Inputting two numbers and 2 asterisks ** between them inside a print function.</p>
+          <p>2) Using the power function pow() inside a print function and entering two numbers inside the parentheses, separated by a comma.</p>
+          <p>In both cases, the fist number will be raised to the power of the second number and the answer will be outputted.</p>
+          <p> If the power function pow() is given 3 values, separated by commas, the modulus of the first number raised to the power of the second number with respect to the third number will be the answer.</p>
+
+               <p>INPUT:</p>
+        <table>
+              <tr><th><pre>print(2 ** 8)
+
+print(pow(2, 8))
+
+print(pow(2, 8, 7))</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>256
+
+256
+
+4</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+          <p>(**If more than two of the above operations are put together in a single equation, BODMAS rules will the solved to output the answer.)</p>
+                    <p> 6)  Maximum and Minimum:</p>
+          <p> Inputting a series of numbers (separated by commas) in the maximum function max() and printing it will output the largest number in the series.</p>
+        <p>  Inputting a series of numbers (separated by commas) in the minimum function min() and printing it will output the smallest number in the series.</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th><pre>print(max(34, 87, 75, 9876, 4))
+
+print(min(3683, 8937, 6, 837, ))</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>9876
+
+6</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+                    <p>7)  Round Function:</p>
+        <p> A floating number printed within the round function                            round() will be rounded to the nearest whole number.</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(round(3.7673))</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>4</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+                    <p>7) Binary Function</p>
+        <p>A whole number printed within the binary function bin() will output the binary form of that number.</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(bin(56))</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>0b111000</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+                    <p>8)  Octal Function:</p>
+        <p>A whole number printed within the octal function oct() will output the octal form of that number.</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(oct(67))</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>0o103</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+                    <p>9)  Hexadecimal Function:</p>
+        <p>A whole number printed within the hexadecimal function hex() will output the hexadecimal form of that number</p>
+               <p>INPUT:</p>
+        <table>
+              <tr><th>print(hex(6))</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>0x6</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+          <br>
+
+
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

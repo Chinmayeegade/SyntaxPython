@@ -1,0 +1,155 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/14.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">dictionaries<span></span></h1>
+          <p>Dictionaries are a form of data types in Python, which store data in key-value pairs.</p>
+        <p>Dictionaries must be enclosed in a pair of curly brackets {} and are stored as variables.</p>
+        <p>Each element within a dictionary comprises two data types: a key, and it’s value, both of which are separated by a colon : .</p>
+        <p>Every element in a dictionary is separated from the next by a comma , .</p>
+        <p>Keys in dictionaries are immutable (They must remain constant throughout a program), however values of keys can be changed mid-program.</p>
+        <p>2 or more dictionaries cannot be concatenated.</p>
+        <p>The index number of the first element in a dictionary is 0.</p>
+        <p>2 keys can have the same value, but if two values have the same key, only the second value will be stored.</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>months ={"Jan":"January",
+
+         "Feb":"February",
+
+         "Mar":"March",
+
+         "Apr":"April",
+
+         "May":"May",
+
+         "Jun":"June",
+
+         "Jul":"July",
+
+         "Aug":"August",
+
+         "Sept":"September",
+
+         "Oct":"October",
+
+         "Nov":"November",
+
+         "Dec":"December",
+
+         }
+
+
+
+days = {"Mon":"Monday",
+
+        "Tues":"Tuesday",
+
+        "Wed":"Wednesday",
+
+        "Thurs":"Thursday",
+
+        "Fri":"Friday",
+
+        "Sat":"Saturday",
+
+        "Sun":"Sunday",
+
+        }
+
+
+
+  #Print the value of the "Mar" key in the dictionary of months (2 ways)
+
+  print(months["Mar"])
+
+  print(months.get("Mar"))
+
+  #Print all the keys in the dictionary of days
+
+  print(days.keys())
+
+  #Print all the values in the dictionary of days
+
+  print(days.values())
+
+  #In the dictionary of months replace 'January' with 'This month'
+
+  change = {"Jan":"This Month"} #'change' is a variable
+
+  months.update(change)
+
+  print(months)
+
+  #Remove 'sunday' from the dictionary of days and then print it
+
+  days.pop("Sun")
+
+  print(days)
+
+  #Clear/empty the dictionary of months and then print it
+
+  print(months.clear())
+
+  # Copy the dictionary of days and save and print it as a dictionary called 'week'
+
+  week = days.copy()
+
+  print(week)</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>March
+
+March
+
+dict_keys(['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'])
+
+dict_values(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
+
+{'Jan': 'This Month', 'Feb': 'February', 'Mar': 'March',
+'Apr': 'April', 'May': 'May', 'Jun': 'June',
+'Jul': 'July', 'Aug': 'August', 'Sept': 'September',
+'Oct': 'October', 'Nov': 'November', 'Dec': 'December'}
+
+{'Mon': 'Monday', 'Tues': 'Tuesday', 'Wed': 'Wednesday',
+'Thurs': 'Thursday', 'Fri': 'Friday', 'Sat': 'Saturday'}
+
+None
+
+{'Mon': 'Monday', 'Tues': 'Tuesday', 'Wed': 'Wednesday',
+'Thurs': 'Thursday', 'Fri': 'Friday', 'Sat': 'Saturday'}</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

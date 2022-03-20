@@ -1,0 +1,60 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/21.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">DEF keyword<span></span></h1>
+          <p>The def keyword in python is used to call define a specific finite function that will process only when it is called, and will otherwise not interfere in the program.</p>
+        <p>The def keyword is succeeded by a variable (to name that function), a parentheses () , and a colon : .</p>
+        <p>The parentheses can also input one or more variable(s) (known as ‘argument(s)’),separated by comma(s), each of which can be concatenated in the program, within the def statement.</p>
+        <p>The part of the program placed within the ‘def’ statement will have to be appropriately indented.</p>
+        <p>The function can be called by typing the variable of the function along with a parentheses. (Only after escaping the ‘def’ function.)</p>
+        <p>While calling a function, the parentheses can input a string/number, which will automatically be equated to the stared ‘argument(s)’.</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>def my_fuction(Name,age):
+    print("Hello",Name,"!!")
+    year = 2021-age
+    print("You were born in",year,".")
+
+my_fuction("John", 34)</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>Hello John !!
+
+You were born in 1987 .</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+        <p>**'David' is the input entered by the user </p>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

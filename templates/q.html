@@ -1,0 +1,87 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/17.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">IF-ELIF-ELSE STATEMENT:<span></span></h1>
+          <p>The if-elif-else statement format is useful for outputs that are based on 3 or more different conditional results/outcomes which are dependent on results that precede it. (That is, if the if statement is not applicable, the program moves on to the ‘elif’ statement(s) and if none of the ‘elif’ statements are applicable, the program proceeds to the ‘else’ statement.)</p>
+        <p>(** ‘if’ and ‘else’ are keywords)</p>
+        <p>(**Conditions for ‘if’ and ‘else’ statements remain same)</p>
+        <p>Innumerable ‘elif’ statements can be used between a if-else statement format.</p>
+        <p>An ‘elif’ statement must have 1 or more condition(s) preceded by a colon : , and the instructions  of fulfillment of an ‘elif’ statement must be print on the line succeeding the ‘elif’ statement and conditions, with an indent before them</p>
+        <p>Two or more conditions given to if or elif or else statement should be separated by either of the keywords and or , based on whether all the stated conditions are to be fulfilled or any one of them, respectively.  </p>
+        <p>The ‘elif ’ and 'else' statements MUST be place in the same columnar positions as of the 'if ' statement.</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pr>question = input("What day is it? ")
+
+question = question.lower()  #CONVERTS INPUTTED ANSWER TO LOWER CASE
+
+  if question == "sunday":
+
+    print("FIRST DAY OF THE WEEK")
+
+  elif question == "monday":
+
+    print("SECOND DAY OF THE WEEK")
+
+  elif question == "tuesday":
+
+    print("THIRD DAY OF THE WEEK")
+
+  elif question == "wednesday":
+
+    print("FOURTH DAY OF THE WEEK")
+
+  elif question == "thursday":
+
+    print("FIFTH DAY OF THE WEEK")
+
+  elif question == "friday":
+
+    print("SIXTH DAY OF THE WEEK")
+
+  else:
+
+    print("SEVENTH DAY OF THE WEEK")</pr></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+        <p>The text entered within the input function will be printed along with user accessibility to enter the input.</p>
+            <table>
+              <tr><th><pre>What day is it? WEDNESDAY
+
+FOURTH DAY OF THE WEEK</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+        <p>**'WEDNESDAY' is the input entered by the user </p>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

@@ -1,0 +1,68 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/19.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">While loops<span></span></h1>
+          <p>A while loop is a structure that requires a condition and a prompt, and the prompt will be continued for as long as the condition is true.</p>
+        <p>Requisites:</p>
+        <p>1) An initial value of the variable which is to be conditioned in the ‘while’ loop.</p>
+        <p>2) A while loop is called by using the keyword while.</p>
+        <p>3) The keyword while is to be succeeded by a condition(s) and a colon : .</p>
+        <p>4) The following line(s) will be composed of an indent and a prompt.</p>
+        <p>5) The line before or after the prompt should include an equal indent and input to update the condition.</p>
+        <p>(**Initialization in while loop is always outside the loop)</p>
+          <p>(**While loops are usually used for infinite repetitions of the prompt.)</p>
+          <p>(**’and’ and ‘or’ keywords can be used between conditions)</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>answers = []
+
+x = 10
+
+  while x<20:
+
+    Sum = (x-5)
+
+    answers.append(Sum)
+
+    x+=1 # updating the value of 'x' for the next time the program runs through the loop
+
+  print(answers) #This prompt will be printed after the loop is escaped</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th>[5, 6, 7, 8, 9, 10, 11, 12, 13, 14]</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+        </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

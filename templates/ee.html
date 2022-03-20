@@ -1,0 +1,94 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+ <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+    <div>
+        <h1><br></h1>
+        <center><h1>ROCK PAPER SCISSORS GAME<span></span></h1></center>
+        <center><table>
+              <tr><th><pre>import random
+
+from random import choice
+
+n = int(input("How many rounds do you want to play? "))
+
+for i in range(1,n+1,1):
+
+ Input = input("Enter Rock or Paper or Scissors: ")
+
+ player = Input.upper()
+
+ options = ["ROCK", "PAPER", "SCISSORS"]
+
+ computer = random.choice(options)
+
+ if player == computer:
+
+    print("Round",i,": Tie!")
+
+ elif (player == "ROCK" and computer == "PAPER") or (player == "PAPER" and computer == "SCISSORS") or (player == "SCISSORS" and computer == "ROCK"):
+
+    print("Round",i,": You lose because your device opted for",computer)
+
+ elif (computer == "ROCK" and player == "PAPER") or (computer == "PAPER" and player == "SCISSORS") or (computer == "SCISSORS" and player == "ROCK"):
+
+    print("Round",i,": You win because your device opted for",computer)
+
+ else:
+
+    print("Round",i,": Wrong Input")
+
+ input("Press 'Enter' key")</pre></th></tr>
+        </table></center>
+        <br>
+        <center><p>OUTPUT:</p>
+        <table>
+            <tr><th><pre>How many rounds do you want to play? 5
+
+Enter Rock or Paper or Scissors: rock
+
+Round 1 : You win because your device opted for SCISSORS
+
+Enter Rock or Paper or Scissors: paper
+
+Round 2 : You win because your device opted for ROCK
+
+Enter Rock or Paper or Scissors: paper
+
+Round 3 : Tie!
+
+Enter Rock or Paper or Scissors: scissors
+
+Round 4 : You lose because your device opted for ROCK
+
+Enter Rock or Paper or Scissors: rock
+
+Round 5 : Tie!
+
+
+
+Process finished with exit code 0</pre></th></tr>
+        </table>
+        </center>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+{% include 'footer.html' %}

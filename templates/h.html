@@ -1,0 +1,60 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/8.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">FORMATTING STRINGS<span></span></h1>
+        <p>Using string formats, the position of the string in the output can be specified.</p>
+        <p>Requisites:</p>
+        <p>1) Print function (print statement and parentheses ())</p>
+        <p>2) Built-in format statement (*Error will be generated if any letter in 'format' is capitalized.)</p>
+        <p>3) 2 strings, both enclosed in inverted commas ' '/" " and separate by a comma , :</p>
+        <p>The first string should comprise the text/numeral that is to be outputted.</p>
+        <p>The second string should include the directed alignment of the text/numeral along with the field width.</p>
+        <p>For example,</p>
+        <p>~ Central alignment in a width of 20 units: “^20” </p>
+        <p>~ Right justified in a width of 10 units: “>10”</p>
+        <p>~ Left justified in a width of 50 units: “<50”</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th>print(format("Syntax_Python @ 123", " ^30"))</th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>print(25)</th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+        <p>The first text/numerals in the first string shall be outputted, centrally aligned in width range of 30 units. </p>
+            <table>
+              <tr><th><center>Syntax_Python@123</center></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

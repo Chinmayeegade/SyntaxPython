@@ -1,0 +1,129 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/18.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">FOR LOOP<span></span></h1>
+          <p>A for loop is a structure that requires a range and a prompt, and the prompt/instruction will be continued for as long as the range is abided.</p>
+        <p>Requisites:</p>
+        <p>1) A for loop is called by using the keyword for</p>
+        <p>2) A variable that has not been previously stated throughout the program (Let's take x for example)</p>
+        <p>3) Either x in (*data type): or function range() in which the parentheses inputs 3 values in the following order(separated by commas):</p>
+        <p>a.   Start value of the variable: This number is included in the prompt operations</p>
+        <p>b.   End value of the variable: This number is NOT included in the prompt operations</p>
+        <p>c.   The value by which the variable is to be increased (positive value) or decreased (negative value)</p>
+        <p>For loops with range function must be printed as follows:
+
+for x in range(3,9,1): (**Don’t forget the colon!)
+
+Here, x will start from 3, update itself by +1 after lopping once and will continue looping until x=9-1=8</p>
+        <p>The following line(s) will be composed of an indent and a prompt.
+
+(**While loops are usually used for definite repetitions of the prompt.)
+
+    (**’and’ and ‘or’ keywords can be used between conditions)</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>list = ["A","B","C","D"]
+for x in list:
+    print(x)</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>A
+
+B
+
+C
+
+D</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+        <br>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>for n in range(2,65,3):
+    print(format(n ** 0.5, ".2f"))
+print("Above is the list of squares of every 3rd number from 2 to 64 ")
+#This prompt will be printed after the loop is escaped</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>1.41
+
+2.24
+
+2.83
+
+3.32
+
+3.74
+
+4.12
+
+4.47
+
+4.80
+
+5.10
+
+5.39
+
+5.66
+
+5.92
+
+6.16
+
+6.40
+
+6.63
+
+6.86
+
+7.07
+
+7.28
+
+7.48
+
+7.68
+
+7.87
+
+Above is the list of square roots of every 3rd number from 2 to 64</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

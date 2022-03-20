@@ -1,0 +1,79 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/9.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">SLicing methods<span></span></h1>
+          <p>Using slicing, only a specified number of characters in the data type can be outputted.</p>
+          <p>SLICING METHODS CAN ONLY BE APPLIED TO STRINGS AND LISTS</p>
+          <p>Requisites:</p>
+        <p>1) A string saved as a variable (*Refer post on variables and data types.)   </p>
+        <p>2) Print function (print statement and parentheses ()) .</p>
+        <p>3) A square bracket [] .</p>
+        <p>4) Index number(s) of the character(s) and (if necessary) a colon : .</p>
+          <p>~ A single number inside the square bracket will print the string character having index number equal to that number.</p>
+          <p>~A number inside the square bracket followed by a colon will print the character having index number equal to that number along with all the characters that succeed it.</p>
+          <p>~A colon inside the square bracket followed by a number will print the characters that precede the character having index number equal to that number. (*The character having index number equal to that number will not be printed.)</p>
+          <p>~ Two numbers separated by a colon inside the square bracket will give an output that prints the character having index number equal to the first number in the square bracket along with characters having index numbers equal to the numbers that lie between the 2 numbers.</p>
+          <p>~ Two colons inside the square bracket followed by a number (n) will print the 0th character along with every nth character in the string</p>
+          <p>~ Two numbers (x & y) separated by two colons will output the xth character, followed by every yth character in the string.</p>
+          <p>Tips:</p>
+          <p>Index numbers of characters in Python start from 0, not 1.</p>
+          <p>Spaces are considered as characters.</p>
+          <p>A number inserted inside the square bracket with a negative sign will output the character in the string having index number equal to that number, considering the string in the reverse order.  </p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>sentence = ("Better late than never.")
+print(sentence[8])
+print(sentence[5:])
+print(sentence[:2])
+print(sentence[5:8])
+print(sentence[::4]
+print(sentence[7::2])</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+            <table>
+              <tr><th><pre>a
+
+r late than never.
+
+Be
+
+r l
+
+Beat e
+
+lt hnnvr</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}

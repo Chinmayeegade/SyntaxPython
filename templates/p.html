@@ -1,0 +1,68 @@
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
+
+<head>
+    <style>
+    table,
+    tr {
+        padding: 15px;
+        text-align: left;
+        color: white;
+        /* Styling the border. */
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/16.png' %}">
+        </div>
+
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">if-else statement<span></span></h1>
+          <p>The if-else statement format is useful for outputs that are based on (only) 2 different conditional results/outcomes (For example, a ‘yes’ or ‘no’ scenario).</p>
+        <p>(** ‘if’ and ‘else’ are keywords)</p>
+        <p>The ‘if’ statement is to be succeeded by a condition(s) and a COLON : .The ‘else’ statement may or may not be assigned condition(s) but it has to be succeeded by a colon : . If the condition(s) is fulfilled, the program will move on to the next instruction, which will then be executed. (THIS INSTRUCTION MUST BE ENTERED WITH AN INDENT PRECEDING IT.) If the stated condition is not fulfilled, the program will move on to execute the ‘else’ statement, the instruction of which too, should be preceded by an indent.</p>
+        <p>Two or more conditions given to if or else statement should be separated by either of the keywords and or , based on whether all the stated conditions are to be fulfilled or any one of them, respectively. </p>
+        <p>The 'else' statement MUST be place in the same columnar position as of the 'if ' statement.</p>
+        <p>1) Try to make the input sound as if you are communicating with the user.</p>
+        <p>2) Preferably add a punctuation and a space tab between the text in the input function, and the closing inverted commas.</p>
+        <p>**CONCATENATION IS NOT POSSIBLE WITHIN AN 'INPUT' STATEMENT.</p>
+        <p>INPUT:</p>
+        <table>
+              <tr><th><pre>marks = float(input("Enter your total marks out of 500: "))
+
+percent = (marks*100)/500
+
+  if percent>=40:
+
+    print("RESULT:PASS")
+
+  else:
+
+    print("RESULT:FAIL")</pre></th></tr>
+        </table>
+        <br>
+        <p>OUTPUT:</p>
+        <p>The text entered within the input function will be printed along with user accessibility to enter the input.</p>
+            <table>
+              <tr><th><pre>Enter your total marks out of 500: 123
+
+RESULT:FAIL</pre></th></tr>
+              <tr><th><br></th></tr>
+              <tr><th>Process finished with exit code 0</th></tr>
+            </table>
+        <p>**'123' is the input entered by the user </p>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% include 'footer.html' %}
