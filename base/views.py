@@ -121,8 +121,8 @@ def z(request):
     return render(request, "z.html")
 
 
-def AA(request):
-    return render(request, "AA.html")
+def hex(request):
+    return render(request, "hex.html")
 
 
 def BB(request):

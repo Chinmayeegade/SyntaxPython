@@ -33,7 +33,7 @@ urlpatterns = [
     path("x/", views.x),
     path("y/", views.y),
     path("z/", views.z),
-    path("AA/", views.AA),
+    path("hex/", views.hex),
     path("BB/", views.BB),
     path("CC/", views.CC),
     path("DD/", views.DD),
