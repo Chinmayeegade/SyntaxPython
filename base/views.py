@@ -125,24 +125,24 @@ def hex(request):
     return render(request, "hex.html")
 
 
-def BB(request):
-    return render(request, "BB.html")
+def pygame(request):
+    return render(request, "pygame.html")
 
 
-def CC(request):
-    return render(request, "CC.html")
+def dice(request):
+    return render(request, "dice.html")
 
 
-def DD(request):
-    return render(request, "DD.html")
+def calculator(request):
+    return render(request, "calculator.html")
 
 
-def EE(request):
-    return render(request, "EE.html")
+def rps(request):
+    return render(request, "rps.html")
 
 
-def FF(request):
-    return render(request, "FF.html")
+def pie(request):
+    return render(request, "pie.html")
 
 
 def GG(request):
