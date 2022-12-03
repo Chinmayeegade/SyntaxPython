@@ -3,6 +3,11 @@
 
 - https://syntaxpython.herokuapp.com/
 - SyntaxPython is a website specifically designed to upskill Python programming the simplest and most concise manner. It is structured to impart programming skills to anybody and everybody, regardless of weather you are a novice, intermediate or expert.
-- The website was buit using the Djnago Framework in Python and has been hosted using Heroku.
+- The website was buit using the Djnago Framework in Python.
 - Django is a Python-based free and open-source web framework that follows the Model–Template–Views (MTV) architectural pattern.
-- Heroku is a AWS based-cloud platform as a service (PaaS) supporting several programming languages which allows free web hosting and deployment.
+## Host Locally
+-     $ git clone https://github.com/Chinmayeegade/SyntaxPython.git
+      $ cd syntaxpython
+      $ python manage.py runserver
+- Navigate to http://127.0.0.1:8000/ to see the website
+
